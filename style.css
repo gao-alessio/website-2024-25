@@ -1,0 +1,45 @@
+*{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-weight: 900;
+text-align: center;
+}
+
+nav{
+background-color: aquamarine;
+padding: 1%;
+}
+h1{
+background-color: brown;
+color: black;
+background-color: rgb(240, 127, 255);
+font-weight: 500;
+
+
+}
+
+p{
+
+
+    background-color: blanchedalmond;
+font-weight: 100;
+margin-left: 30%;
+padding: 2%;
+
+}
+
+.rossoBLU{
+background-color: cornflowerblue;
+color: blue;
+}
+.allineamento-dx-leggero{
+text-align: right;
+font-weight: 100;
+
+}
+
+
+.nomecognume-zero-legger{
+color: azure;
+text-align: left;
+font-size: xx-large;
+}
