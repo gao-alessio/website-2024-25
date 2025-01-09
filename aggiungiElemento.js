@@ -4,6 +4,16 @@ const bottoneAggiungi = document.getElementById('bottoneAggiungi');
 const bottoneSvuota = document.getElementById('svuota');
 const lista = document.getElementById('miaLista');
 
+function controllaSeListaVuota({
+   if (lista.children.length === 0) {
+    const messaggioVuota = document.createElement("li"); // crea u
+    messaggioVuota.textContent = "la lista è vuota";
+    messaggioVuota.id = 'messagioVuota'
+    lista.appemdChild("messaggioVuota");
+   }
+
+
+})
 console.log(lista.children.length);
 
 bottoneAggiungi.addEventListener('click', function() {
