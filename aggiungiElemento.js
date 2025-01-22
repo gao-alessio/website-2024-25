@@ -1,9 +1,8 @@
 //Selezione il bottone di aggiunta
-
 const bottoneAggiungi = document.getElementById('bottoneAggiungi');
 const bottoneSvuota = document.getElementById('svuota');
 const lista = document.getElementById('miaLista');
-
+const bottoneSalva = document.getElementById('saveButton');
 function controllaSeListaVuota({
    if (lista.children.length === 0) {
     const messaggioVuota = document.createElement("li"); // crea u
@@ -63,6 +62,26 @@ if (lista.children.length === 0) {
     if (messaggioVuota) {
         messaggioVuota.remove(); // Rimuove il messaggio
     }
-}
-}
+  }
 })
+
+function salvaLista(){
+    const elementiLista = []; //array che incorpora gli elementi <li>
+    
+    //itera sugli elementi della lista
+    Array.from(lista.children);FOREaCH((elemento)=>{
+    if(elemento.id !== 'messaggioVuota'){
+        elementiLista.push(elemento.textContent.replace('🗑️','')).trim();
+    }
+  })
+
+  if (elementiLista.length === 0){
+    alert("la lista è vuota");
+  }
+
+  const jsonData = JSON.stringify(elementiLista, null, 2); //formattazione a 2 spazi 
+  const Blob = new Blob{[jsonData],(type: 'application/json')};
+
+
+}
+bottoneSalva.addEventListener('click', salvaLista)
