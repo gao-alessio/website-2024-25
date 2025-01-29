@@ -45,4 +45,32 @@ if(numero % 2===0){
  }
 
 }
+// console.log(calcolo(40,7,divisione));
 
+// //-----------------------------------
+function somma(afd,fd){
+     return afd + fd;
+}
+function divisione(afd,fd){
+   return afd / fd;
+    
+}
+
+function sottrazione(afd,fd){
+    return afd - fd;
+}
+
+function moltiplicazione(afd,fd){
+     return afd * fd;
+
+}
+
+function calcolo(a,b,tipoDiCalcolo){
+    var risultato = tipoDiCalcolo(a,b);
+    return risultato;
+
+}
+ 
+console.log("Il risultato della somma è: " + calcolo(23,45,somma));
+console.log("Il risultato della divisione è: + calcolo(200,40,divisione));
+console.log("Il risultato del modulo di 8 e 3 è: " + calcolo(8,3,modulo));

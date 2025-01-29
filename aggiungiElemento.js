@@ -85,3 +85,26 @@ function salvaLista(){
 
 }
 bottoneSalva.addEventListener('click', salvaLista)
+
+// Seleziona il pulsante per salvare
+const salvaPulsante = document.getElementById('savebutton');
+
+
+//Funzione per salvare la lista in un file e JSON
+function salvaListaInjson(){
+   cost elementiLista = [];
+
+// itera sugli elementi della lista
+Array.from(lista.children).forEach(elemento) => {
+  // Ignora  l'elemento "la Lista è vuola"
+  if (elemnto.id !== 'messaggioVuola'){
+   elementiLista.push(elemento. textContent.replace(' 🗑️','').trim());
+
+  }
+}
+
+};
+
+
+
+
