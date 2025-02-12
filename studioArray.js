@@ -16,7 +16,7 @@ console.log ("la lughezza di è: array1:"+ array1.length);
 
 //per accadere all'ultimo elemento
 
-let ultimoElemento = elencoFrutta[elencoFrutta.length];
+let ultimoElemento = elencoFrutta[elencoFrutta.length-1];
 
 elencoFrutta.push("cachi");
 console.log(elencoFrutta);
