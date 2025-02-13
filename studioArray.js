@@ -9,7 +9,7 @@ console.log(elencoFrutta);
 
 //per accedere all'ultimo elemento
 
-let elencoFrutta.log(elencoFrutta[0]);
+
 
 console.log ("la lunghezza di elencoFrutta è :"+ elencoFrutta.length,length);
 console.log ("la lughezza di è: array1:"+ array1.length);
@@ -31,3 +31,18 @@ console .log(elencoFrutta);
 
 elencoFrutta.shift();
 console .log(elencoFrutta);
+
+let ordine = ["Z","K","J","A"];
+
+console.log(ordine);
+
+ordine.sort(); //ordina l'array
+console.log(ordine);
+
+let word1 = "roma";
+let word2 = "amor";
+
+console.log (word1.split("").sort());
+
+console.log (word2.split("").sort());
+
