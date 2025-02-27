@@ -118,3 +118,18 @@ function calcolo(a,b,tipoDiCalcolo){
 console.log("Il risultato della somma è: " + calcolo(200,40,somma));
 console.log("Il risultato della divisione è: " + calcolo(200,40,divisione));
 console.log("Il risultato del modulo di 500 e 400 è: " + calcolo(500,400,modulo));
+
+
+
+function sommmaParamatri(Parametro1,Paramentro2,Paramentro3){
+
+   let risultatoTot = (Parametro1 + Paramentro2)/Paramentro3;
+   return risultatoTot;
+
+}
+
+console.log (sommmaParamatri(50,30,2));
+
+
+
+
