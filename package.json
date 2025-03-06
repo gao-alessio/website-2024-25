@@ -1,0 +1,11 @@
+{
+  "name": "website-2024-25",
+  "version": "1.0.0",
+  "description": "vano back-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
